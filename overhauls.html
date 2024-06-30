@@ -7,12 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preload" href="./css/style.css" as="style" />
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/logoex-icon.webp">
+    <link rel="icon" href="img/Coco/LogoEx.webp">
     <link rel="canonical" href="https://vivanewvegas.moddinglinked.com">
     <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
     <title>Overhauls | Viva New Vegas</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Oblivion, TESIV, TES4, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
     <meta name="description" content="Drastic gameplay overhauls that make the game much more difficult and exciting, recommended only for veteran players.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
@@ -20,7 +20,7 @@
     <meta property="og:title" content="Viva New Vegas">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
-    <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/card.webp">
+    <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/Others/Card.webp">
     <meta property="og:description" content="Drastic gameplay overhauls that make the game much more difficult and exciting, recommended only for veteran players.">
 </head>
 
@@ -31,13 +31,11 @@
         <div id="sideButton" onclick="toggleNav()">
             <i class="fa-solid fa-bars"></i>
         </div>
-        <img src="./img/logoex.webp" alt="Logo">
+        <img src="./img/Coco/LogoEx.webp" alt="Logo">
         <a href="./index.html">Viva New Vegas - Extended</a>
         <div class="guideLinks">
             <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
             <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-            <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
-            <a href="https://gloryofcyrodiil.moddinglinked.com" target="_blank" rel="nofollow">Oblivion</a>
         </div>
     </div>
 
@@ -88,7 +86,7 @@
                     <a href="./visuals.html">Visuals</a>
                 </li>
                 <li>
-                    <a href="./finish.html">VNVE Finish</a>
+                    <a href="./finish.html">Extended Finish</a>
                 </li>
             </ul>
         </div>
@@ -96,7 +94,10 @@
             <hr>
             <ul>
                 <li>
-                    <a href="./appendix.html">Appendix</a>
+                    <a href="./changelog.html">Changelog</a>
+                </li>
+                <li>
+                    <a href="./resources.html">Resources</a>
                 </li>
                 <li>
                     <a href="./faq.html">FAQ</a>
@@ -123,40 +124,29 @@
                 <li>
                     <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
                 </li>
-                <li>
-                    <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
-                </li>
-                <li>
-                    <a href="https://gloryofcyrodiil.moddinglinked.com" target="_blank" rel="nofollow">Oblivion</a>
-                </li>
             </ul>
         </div>
 
         <!-- Footer -->
         <div id="footer">
             <ul>
-                <li>
-                    <a href="https://discord.gg/moddinglinked-659108573485465620" target="_blank">
+                <li class="discord">
+                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
                         <i class="fab fa-discord"></i>
+                        Discord
                     </a>
                 </li>
-                <li>
-                    <a href="https://www.patreon.com/WallSoGB" target="_blank">
-                        <i class="fab fa-patreon"></i>
+                <li class="paypal">
+                    <a href="https://paypal.me/Ungeziefi" target="_blank">
+                        <i class="fa fa-paypal"></i>
+                        Donate
                     </a>
                 </li>
-                <li>
-                    <a id="paypal" onclick="toggleDonationMenu()">
-                        <i class="fab fa-paypal"></i>
+                <li class="github">
+                    <a href="https://github.com/ModdingLinked/Viva-New-Vegas" target="_blank">
+                        <i class="fab fa-github"></i>
+                        GitHub
                     </a>
-                    <div id="paypalMenu" style="display: none;">
-                        <a href="https://www.paypal.com/paypalme/VishVadeva" target="_blank">
-                            VishVadeva
-                        </a>
-                        <a href="https://www.paypal.com/paypalme/wallsogb" target="_blank">
-                            Wall SoGB
-                        </a>
-                    </div>
                 </li>
             </ul>
         </div>
@@ -166,79 +156,54 @@
     <div class="content">
         <div class="section">
             <h1>Overhauls</h1>
-            <h2>Creating a Separator in MO2.</h2>
+            <h3>In this step, we will install mods that completely rebalance game mechanics and its difficulty</h3>
+            <blockquote>As with the previous page, it is especially important to read the descriptions of these mods.</blockquote>
+
+            <hr>
+
+            <h2>Creating a Separator in MO2</h2>
             <ol>
-                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
+                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
                 <li>Name the separator <strong>Overhauls</strong>.</li>
             </ol>
 
-            <!-- JSawyer Ultimate Edition -->
+            <!-- Vigor -->
             <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/61592" target="_blank">
-                    <h2 id="jSawyer">JSawyer Ultimate Edition</h2>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">
+                    <h2 id="vigor">Vigor</h2>
                 </a>
             </p>
             <h2 class="install">Installation instructions:</h2>
             <ul>
-                <li><b>Main Files - JSawyer Ultimate Edition</b></li>
-                <li><b>Optional Files - JSawyer Ultimate Edition - Push's Tweaks</b> (select the name that matches the file on Nexus when the installation prompt comes up)</li>
+                <li><b>Main Files - Vigor - VNV Edit</b></li>
+                <li>
+                    <b><a href="https://www.nexusmods.com/newvegas/mods/84396" target="_blank">Simple Vigor Config</a></b>
+                    <ul>
+                        <li><b>Main Files - Simple Vigor Config</b></li>
+                    </ul>
+                </li>
+                <li>
+                    <b><a href="https://www.nexusmods.com/newvegas/mods/77945" target="_blank">Vish's Patch Hub</a></b>
+                    <ul>
+                        <li><b>Main Files - Vigor - SMIM Patch</b></li>
+                    </ul>
+                </li>
             </ul>
-            An updated and fixed version of the gameplay re-balance mod made by the lead director of the game, Josh Sawyer.
+            A fork of JSawyer that strikes a balance between JSawyer's balance overhaul and vanilla - along with bug and consistency fixes. Among the large number of changes, here are the highlights:
+            <ul>
+                <li>Lower starting AP and Health.</li>
+                <li>Less loot.</li>
+                <li>Healing is harder.</li>
+                <li>Lackluster equipment is more viable.</li>
+                <li>Minor balance tweaks to perks in order to make them more interesting and fun to play.</li>
+            </ul>
             <blockquote>
-                The INI for this mod contains many configurable features, such as an adjustable level cap and carry capacity formula. You should look through the INI and see if there are any features you would like to change. For example, you can set <strong>fCarryWeightBase</strong> to <strong>150</strong> if you want the vanilla carry weight formula back.
+                <b>IMPORTANT:</b>
+                <br>
+                Vigor, by default, will lower your carry weight from 150 to 50. You can customize this value thanks to the Simple Vigor Config mod, which contains an INI file (double-click, Filetree, config folder).
             </blockquote>
 
-            <!-- Mojave Arsenal -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/62941" target="_blank">
-                    <h2 id="mojaveArsenal">Mojave Arsenal</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Mojave Arsenal</b></li>
-                <li><b>Optional Files - INI Config - Gun Runners' Arsenal Merged</b> (select the name that matches the file on Nexus when the installation prompt comes up)</li>
-            </ul>
-            Provides a highly customisable and compatible collection of tweaks and quality-of-life improvements related to weapons and ammo, including the option to seamlessly integrate the Gun Runners' Arsenal DLC content with the rest of the game.
-
-            <!-- Famine -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/74985" target="_blank">
-                    <h2 id="famine">Famine</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Famine</b></li>
-            </ul>
-            Dynamically lowers the amount of loot in the world to create a harsher and less forgiving economy.
-
-            <!-- Food Effect Tweaks -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/75103" target="_blank">
-                    <h2 id="foodHealing">Food Effect Tweaks</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Food Effect Tweaks</b></li>
-            </ul>
-            Lowers the amount of healing provided by food items, making the distinction between the Survival and Medicine skills more important.
-
-            <!-- Player Combat Priority -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/71699" target="_blank">
-                    <h2 id="playerPriority">Player Combat Priority</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Player Combat Priority</b></li>
-                <li><b><a href="https://www.nexusmods.com/newvegas/mods/80339" target="_blank">Player Combat Priority Alt Chance To Attack Dog Patch</a></b></li>
-            </ul>
-            Makes enemies focus on the player in combat rather than solely companions.
-
-            <!-- Essential Vanilla Enhancements Merged -->
+            <!-- Vanilla Enhancements Merged -->
             <p>
                 <a class="link" href="https://www.nexusmods.com/newvegas/mods/78877" target="_blank">
                     <h2 id="enhancementsMerged">Essential Vanilla Enhancements Merged</h2>
@@ -247,29 +212,15 @@
             <h2 class="install">Installation instructions:</h2>
             <ul>
                 <li><b>Main Files - Vanilla Enhancements Merged</b></li>
-                <li><b>Optional Files - Vanilla Enhancements Merged - JSawyer Ultimate Push's Tweaks Patch</b> (select the name that matches the file on Nexus when the installation prompt comes up)</li>
-                <li>Additionally install the following files (select the name that matches the file on Nexus when the installation prompt comes up)</li>
-                <ul>
-                    <li><a href="https://www.nexusmods.com/newvegas/mods/77945" target="_blank"><b>EVEM - YUP Patch</b></a></li>
-                    <li><a href="https://www.nexusmods.com/newvegas/mods/77945" target="_blank"><b>EVEM - Crafting Consistency Fix Patch</b></a></li>
-                    <li><a href="https://www.nexusmods.com/newvegas/mods/77945" target="_blank"><b>EVEM - JSUE Patch</b></a> (only if you installed JSawyer Ultimate Edition)</li>
-                    <li><a href="https://www.nexusmods.com/newvegas/mods/77945" target="_blank"><b>EVEM - Mojave Arsenal Patch</b></a></li>
-                </ul>
-                <li><b><a href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">Navmesh Overhaul VNV Patch</a></b> (select the name that matches the file on Nexus when the installation prompt comes up)</li>
+                <li>
+                    <b><a href="https://www.nexusmods.com/newvegas/mods/77945" target="_blank">Vish's Patch Hub</a></b>
+                    <ul>
+                        <li><b>Main Files - EVEM - YUP Patch</b></li>
+                        <li><b>Miscellaneous Files - EVEM - Vigor Patch</b> (only if you installed Vigor)</li>
+                    </ul>
+                </li>
             </ul>
-            Compilation of many smaller gameplay-related mods, all updated, fixed, and optimized to work together.
-
-            <!-- Better Character Creation -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">
-                    <h2 id="betterCc">Better Character Creation</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Better Character Creation</b></li>
-            </ul>
-            Improves the character creation by speeding up the process, adding specialized gear based on your tag skills, and making Wild Wasteland an opt-in feature rather than a trait.
+            Compilation of many smaller gameplay-related mods, all updated, fixed and optimized to work together.
 
             <!-- Traps Tweaks -->
             <p>
@@ -293,26 +244,14 @@
             <ul>
                 <li><b>Main Files - Harder Barter Faster Stronger</b></li>
             </ul>
-            Makes the economy harsher for characters with low barter, makes barter affect prices more, and slightly narrows the difference between max sell and min buy prices.
-
-            <!-- Better Brotherhood -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/75031" target="_blank">
-                    <h2 id="betterBrotherhood">Better Brotherhood</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Better Brotherhood</b></li>
-            </ul>
-            Tweaks to make the Mojave Brotherhood a better faction, including more sources of fame, fixed ending slide conditions, additional repair services, improved diversified leveled lists and a new weapon.
+            Makes the economy harsher for characters with low barter, makes barter affect prices more and slightly narrows the difference between max sell and min buy prices.
         </div>
 
         <!-- Arrows -->
         <div>
             <hr>
-            <a href="./gameplay.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Gameplay</span></a>
-            <a href="./content.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/arrow.webp" alt="Forward Arrow"><span class="arrowText right">Content</span></a>
+            <a href="./gameplay.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/Others/Arrow.webp" alt="Back Arrow"><span class="arrowText left">Gameplay</span></a>
+            <a href="./content.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/Others/Arrow.webp" alt="Forward Arrow"><span class="arrowText right">Content</span></a>
         </div>
     </div>
 
@@ -320,34 +259,16 @@
     <div id="sidenavRight">
         <ul>
             <li>
-                <a href="#jSawyer">JSawyer</a>
+                <a href="#vigor">Vigor</a>
             </li>
             <li>
-                <a href="#mojaveArsenal">Mojave Arsenal</a>
-            </li>
-            <li>
-                <a href="#famine">Famine</a>
-            </li>
-            <li>
-                <a href="#foodHealing">Food Effect Tweaks</a>
-            </li>
-            <li>
-                <a href="#playerPriority">Player Combat Priority</a>
-            </li>
-            <li>
-                <a href="#enhancementsMerged">Essential Vanilla Enhancements Merged</a>
-            </li>
-            <li>
-                <a href="#betterCc">Better Character Creation</a>
+                <a href="#enhancementsMerged">Vanilla Enhancements Merged</a>
             </li>
             <li>
                 <a href="#trapTweaks">Traps Tweaks</a>
             </li>
             <li>
                 <a href="#harderBarter">Harder Barter</a>
-            </li>
-            <li>
-                <a href="#betterBrotherhood">Better Brotherhood</a>
             </li>
         </ul>
     </div>

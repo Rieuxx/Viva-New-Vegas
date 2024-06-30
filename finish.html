@@ -7,12 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preload" href="./css/style.css" as="style" />
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/logoex-icon.webp">
+    <link rel="icon" href="img/Coco/LogoEx.webp">
     <link rel="canonical" href="https://vivanewvegas.moddinglinked.com">
     <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
     <title>Final Steps | Viva New Vegas</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Oblivion, TESIV, TES4, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
     <meta name="description" content="Final steps necessary before playing the game.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
@@ -20,7 +20,7 @@
     <meta property="og:title" content="Viva New Vegas">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
-    <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/card.webp">
+    <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/Others/Card.webp">
     <meta property="og:description" content="Final steps necessary before playing the game.">
 </head>
 
@@ -31,13 +31,11 @@
         <div id="sideButton" onclick="toggleNav()">
             <i class="fa-solid fa-bars"></i>
         </div>
-        <img src="./img/logoex.webp" alt="Logo">
+        <img src="./img/Coco/LogoEx.webp" alt="Logo">
         <a href="./index.html">Viva New Vegas - Extended</a>
         <div class="guideLinks">
             <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
             <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-            <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
-            <a href="https://gloryofcyrodiil.moddinglinked.com" target="_blank" rel="nofollow">Oblivion</a>
         </div>
     </div>
 
@@ -88,7 +86,7 @@
                     <a href="./visuals.html">Visuals</a>
                 </li>
                 <li>
-                    <a href="./finish.html" class="active">VNVE Finish</a>
+                    <a href="./finish.html" class="active">Extended Finish</a>
                 </li>
             </ul>
         </div>
@@ -96,7 +94,10 @@
             <hr>
             <ul>
                 <li>
-                    <a href="./appendix.html">Appendix</a>
+                    <a href="./changelog.html">Changelog</a>
+                </li>
+                <li>
+                    <a href="./resources.html">Resources</a>
                 </li>
                 <li>
                     <a href="./faq.html">FAQ</a>
@@ -123,40 +124,29 @@
                 <li>
                     <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
                 </li>
-                <li>
-                    <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
-                </li>
-                <li>
-                    <a href="https://gloryofcyrodiil.moddinglinked.com" target="_blank" rel="nofollow">Oblivion</a>
-                </li>
             </ul>
         </div>
 
         <!-- Footer -->
         <div id="footer">
             <ul>
-                <li>
-                    <a href="https://discord.gg/moddinglinked-659108573485465620" target="_blank">
+                <li class="discord">
+                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
                         <i class="fab fa-discord"></i>
+                        Discord
                     </a>
                 </li>
-                <li>
-                    <a href="https://www.patreon.com/WallSoGB" target="_blank">
-                        <i class="fab fa-patreon"></i>
+                <li class="paypal">
+                    <a href="https://paypal.me/Ungeziefi" target="_blank">
+                        <i class="fa fa-paypal"></i>
+                        Donate
                     </a>
                 </li>
-                <li>
-                    <a id="paypal" onclick="toggleDonationMenu()">
-                        <i class="fab fa-paypal"></i>
+                <li class="github">
+                    <a href="https://github.com/ModdingLinked/Viva-New-Vegas" target="_blank">
+                        <i class="fab fa-github"></i>
+                        GitHub
                     </a>
-                    <div id="paypalMenu" style="display: none;">
-                        <a href="https://www.paypal.com/paypalme/VishVadeva" target="_blank">
-                            VishVadeva
-                        </a>
-                        <a href="https://www.paypal.com/paypalme/wallsogb" target="_blank">
-                            Wall SoGB
-                        </a>
-                    </div>
                 </li>
             </ul>
         </div>
@@ -165,7 +155,30 @@
     <!-- Content -->
     <div class="content">
         <div class="section">
-            <h1>Base Finish</h1>
+            <h1>Extended Finish</h1>
+            <h3>This is the final step of the guide, here we will order our plugins</h3>
+
+            <hr>
+
+            <h2>Creating a Separator in MO2</h2>
+            <ol>
+                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
+                <li>Name the separator <strong>Extended Finish</strong>.</li>
+            </ol>
+
+            <!-- Stewie VNVE INI -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">
+                    <h2 id="stewieIni">Stewie Tweaks - VNV Extended INI</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Stewie Tweaks - VNV Extended INI</b></li>
+            </ul>
+            Preconfigured collection quality of life features, bugfixes, performance patches, and gameplay changes that fit the VNV Extended list.
+
+            <!-- Load Order -->
             <p>
                 <a class="link" href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">
                     <h2 id="loadOrder">Load Order</h2>
@@ -174,22 +187,34 @@
             <h2 class="install">Installation instructions:</h2>
             <ol>
                 <li>Download the file.</li>
-                <li>Once it has finished downloading, click the <img style="width:2%" src="./img/mo2 folders.webp" alt="MO2 folders"> button at the top of MO2 and select <strong>Open Profile folder</strong>.</li>
+                <li>Once it has finished downloading, click the <img style="width:2%" src="./img/MO2/Folders.webp" alt="MO2 folders"> button at the top of MO2 and select <strong>Open Profile folder</strong>.</li>
                 <li>Extract the <strong>loadorder.txt</strong> from the downloaded archive to the folder you opened and overwrite when prompted.</li>
                 <li>Once the file is extracted, click <strong>F5</strong> while you are on MO2 without any menu open.</li>
                 <li>Right-click in the <b>right</b> pane of MO2 and select <strong>Enable all</strong>.</li>
             </ol>
             <blockquote>
-                If you have not added any mods to the guide, <strong>CC - Rain.esp</strong> should be the bottom mod in your load order (the <strong>Plugins</strong> tab in the <b>right</b> pane of MO2) after applying the load order and refreshing MO2. If not, you made a mistake during mod installation.
+                If you have not added any mods to the guide, <strong>CC - 3D Rain.esp</strong> should be the bottom mod in your load order (the <strong>Plugins</strong> tab in the <b>right</b> pane of MO2) after applying the load order and refreshing MO2. If not, you made a mistake during mod installation.
                 <br>
-                You can join our <a href="https://discord.gg/moddinglinked-659108573485465620" target="_blank">Discord</a> for support.
+                You can join our <a href="https://discord.gg/S99Ary5eba" target="_blank">Discord</a> for support.
             </blockquote>
             Automatically ensures your load order is correct for the guide.
+
+
+            <h2 class="gameLaunch">Launching the Game</h2>
+            <p>
+                To run the game, use the <strong>New Vegas</strong> executable in Mod Organizer 2.
+            </p>
+            <p>
+                You can use the <b>Shortcut</b> drop-down to create Desktop and Start Menu shortcuts, this will allow you to launch the game without opening the MO2 GUI.
+            </p>
+            <p>
+                <img src="./img/Others/Start Game.webp" alt="Run New Vegas through MO2" class="width-very-limited">
             <blockquote>
-                REMINDER: Run the game using the New Vegas option in MO2!
+                Launching through xNVSE's loader is not needed, as thanks to the 4GB Patcher or Epic Games Patcher, game will auto-load xNVSE.
                 <br>
-                <img src="./img/run fnv.webp" alt="Run New Vegas through MO2">
+                This also means it's safe to launch the game through its own launcher.
             </blockquote>
+            </p>
 
             <!-- Finishing Notes -->
             <p>
@@ -197,7 +222,7 @@
                     <h2 id="notes">Finishing Notes</h2>
                 </a>
             </p>
-            You have now completed the full Viva New Vegas guide and you can enjoy the game. You may want to add your own mods on top of the guide, but that is only recommended if you are an experienced modder since you need to know how to use <a href="https://wastelandsurvivalguide.com/docs/xedit" target="_blank">FNVEdit</a> and <a href="https://wastelandsurvivalguide.com/docs/themethod" target="_blank">The Method</a> and have good general knowledge of many game systems.
+            You have now completed the full Viva New Vegas guide and you can enjoy the game. You may want to add your own mods on top of the guide, but that is only recommended if you are an experienced modder since you need to know how to use <a href="https://moddinglinked.com/xedit.html" target="_blank">FNVEdit</a> and <a href="https://moddinglinked.com/themethod.html" target="_blank">The Method</a> and have good general knowledge of many game systems.
             <br>
             <br>
             And remember, we may not provide support for setups that have added mods, especially if you went overboard.
@@ -206,7 +231,7 @@
         <!-- Arrows -->
         <div>
             <hr>
-            <a href="./visuals.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Visuals</span></a>
+            <a href="./visuals.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/Others/Arrow.webp" alt="Back Arrow"><span class="arrowText left">Visuals</span></a>
         </div>
     </div>
 
@@ -214,7 +239,13 @@
     <div id="sidenavRight">
         <ul>
             <li>
+                <a href="#stewieIni">Stewie VNVE INI</a>
+            </li>
+            <li>
                 <a href="#loadOrder">Load Order</a>
+            </li>
+            <li>
+                <a href="#gameLaunch">Launching the Game</a>
             </li>
             <li>
                 <a href="#notes">Finishing Notes</a>

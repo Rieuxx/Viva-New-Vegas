@@ -11,9 +11,9 @@
     <link rel="canonical" href="https://vivanewvegas.moddinglinked.com">
     <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
-    <title>Final Steps | Viva New Vegas</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
-    <meta name="description" content="Final steps necessary before playing the game.">
+    <title>Decompression Guide | Viva New Vegas</title>
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack, Decompression, Decompressing, zLib, FPS, Stuttering">
+    <meta name="description" content="Guide on how to decompress all plugins in your load order for better performance and less stuttering.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
     <meta property="og:site_name" content="ModdingLinked">
@@ -21,7 +21,7 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
     <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/Others/Card.webp">
-    <meta property="og:description" content="Final steps necessary before playing the game.">
+    <meta property="og:description" content="Guide on how to decompress all plugins in your load order for better performance and less stuttering.">
 </head>
 
 <body>
@@ -62,7 +62,7 @@
                     <a href="./bugfix.html">Bug Fixes</a>
                 </li>
                 <li>
-                    <a href="./basefinish.html" class="active">Base Finish</a>
+                    <a href="./basefinish.html">Base Finish</a>
                 </li>
             </ul>
             <hr>
@@ -99,6 +99,11 @@
                 <li>
                     <a href="./resources.html">Resources</a>
                 </li>
+                <ul>
+                    <li>
+                        <a href="./decompress.html" class="active">Decompression</a>
+                    </li>
+                </ul>
                 <li>
                     <a href="./faq.html">FAQ</a>
                 </li>
@@ -155,70 +160,40 @@
     <!-- Content -->
     <div class="content">
         <div class="section">
-            <h1>Base Finish</h1>
-            <h3>This is the final step for the base, "patched vanilla" part of the guide</h3>
-
-            <hr>
-
-            <!-- Load Order -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/79358" target="_blank">
-                    <h2 id="loadOrder">Load Order</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ol>
-                <li>Download the file.</li>
-                <li>Once it has finished downloading, click the <img style="width:2%" src="./img/MO2/Folders.webp" alt="MO2 folders"> button at the top of MO2 and select <strong>Open Profile folder</strong>.</li>
-                <li>Extract the <strong>loadorder.txt</strong> from the downloaded archive to the folder you opened and overwrite when prompted.</li>
-                <li>Once the file is extracted, click <strong>F5</strong> while you are on MO2 without any menu open.</li>
-                <li>Right-click in the <b>right</b> pane of MO2 and select <strong>Enable all</strong>.</li>
-            </ol>
-            <blockquote>
-                If you have not added any mods to the guide, <strong>Strip Lights Region Fix.esp</strong> should be the bottom mod in your load order (the <strong>Plugins</strong> tab in the <b>right</b> pane of MO2) after applying the load order and refreshing MO2. If not, you made a mistake during mod installation.
-                <br>
-                You can join our <a href="https://discord.gg/S99Ary5eba" target="_blank">Discord</a> for support.
-            </blockquote>
-            Automatically ensures your load order is correct for the guide.
-
-            <h2 class="gameLaunch">Launching the Game</h2>
-            <p>
-                To run the game, use the <strong>New Vegas</strong> executable in Mod Organizer 2.
-            </p>
-            <p>
-                <img src="./img/Others/Start Game.webp" alt="Run New Vegas through MO2" class="width-very-limited">
-            <blockquote>
-                Launching through xNVSE's loader is not needed, as thanks to the 4GB Patcher or Epic Games Patcher, game will auto-load xNVSE.
-                <br>
-                This also means it's safe to launch the game through its own launcher.
-            </blockquote>
-            </p>
-            <p>
-                You can use the <b>Shortcut</b> drop-down to create Desktop and Start Menu shortcuts, this will allow you to launch the game without opening the MO2 GUI.
-            </p>
-
-            <!-- VNVE -->
+            <h1>Decompression Guide</h1>
             <p>
                 <a>
-                    <h2 id="vnve">VNV Extended</h2>
+                    <h2 id="why">Why?</h2>
                 </a>
+                The vanilla game uses zLib compression for most things, plugin records included. Unfortunately, <strong>zLib is very slow</strong> and CPU heavy (especially on SSDs), which sadly results in loading stutter, especially when using mods that add lots of NPCs and/or new landscapes.
+                <br>
+                <br>
+                <a href="./utilities.html#fixedEsms">Ultimate Edition ESM Fixes</a> and <a href="https://thebestoftimes.moddinglinked.com">Tale of Two Wastelands</a> already decompress the game's base plugins for you, so <strong>all that is left to decompress is your mods</strong>. Luckily, you can very easily do this using xEdit and a simple script.
+            <blockquote>This process is recommended once your load order is complete, so that everything gets decompressed.</blockquote>
             </p>
-            <div class="extended-background">
-                <img src="./img/Coco/FullExtended.webp" alt="Full VNVE Coco" id="logoex">
-                <p>
-                    You have now completed the basic section of Viva New Vegas. If you don't want to mod your game further, you can now start playing. Have fun!
-                    <br>
-                    <br>
-                    If you are hungry for more mods, head to the <a href="./hud.html">User Interface</a> page and keep reading.
-                </p>
-            </div>
+            <p>
+                <a>
+                    <h2 id="process">The Process</h2>
+                </a>
+            <ol>
+                <li>If you haven't already, read the <a href="https://moddinglinked.com/xedit.html">xEdit guide</a> to avoid confusion with the next steps.</li>
+                <li>Download the <a href="https://www.nexusmods.com/newvegas/mods/74181">Decompress Records script</a>.</li>
+                <li>Extract the archive's contents into the <strong>xEdit folder</strong>.</li>
+                <li>Run xEdit and load <strong>all of your mods</strong>.</li>
+                <li>Once loaded, select all plugins on the tree-view with CTRL+A, then right-click and <code><strong>Apply Script...</strong></code></li>
+                <img src="./img/Others/Apply Script.webp" alt="Apply a script to the entire load order">
+                <li>Type <strong>Decompress Records</strong> in the filter and the script will automatically be selected.</li>
+                <img src="./img/Others/Decompress Script.webp" alt="Select the Decompress Records script">
+                <li>Click <code><strong>OK</strong></code> and wait for it to process everything.</li>
+                <li><strong>Close xEdit</strong>, if it asks you to save then that means the plugins listed got decompressed.</li>
+            </ol>
+            </p>
         </div>
 
         <!-- Arrows -->
         <div>
             <hr>
-            <a href="./bugfix.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/Others/Arrow.webp" alt="Back Arrow"><span class="arrowText left">Bug Fixes</span></a>
-            <a href="./hud.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/Others/Arrow.webp" alt="Forward Arrow"><span class="arrowText right">User Interface</span></a>
+            <a href="./resources.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/Others/Arrow.webp" alt="Back Arrow"><span class="arrowText left">Resources</span></a>
         </div>
     </div>
 
@@ -226,13 +201,10 @@
     <div id="sidenavRight">
         <ul>
             <li>
-                <a href="#loadOrder">Load Order</a>
+                <a href="#why">Why?</a>
             </li>
             <li>
-                <a href="#gameLaunch">Launching the Game</a>
-            </li>
-            <li>
-                <a href="#vnve">VNV Extended</a>
+                <a href="#process">The Process</a>
             </li>
         </ul>
     </div>

@@ -7,12 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preload" href="./css/style.css" as="style" />
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/logo-icon.webp">
+    <link rel="icon" href="img/Coco/Logo.webp">
     <link rel="canonical" href="https://vivanewvegas.moddinglinked.com">
     <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
     <title>Introduction | Viva New Vegas</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Oblivion, TESIV, TES4, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
     <meta name="description" content="Preamble about the guide's goals and requirements.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
@@ -20,7 +20,7 @@
     <meta property="og:title" content="Viva New Vegas">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
-    <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/card.webp">
+    <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/Others/Card.webp">
     <meta property="og:description" content="Preamble about the guide's goals and requirements.">
 </head>
 
@@ -31,13 +31,11 @@
         <div id="sideButton" onclick="toggleNav()">
             <i class="fa-solid fa-bars"></i>
         </div>
-        <img src="./img/logo.webp" alt="Logo">
+        <img src="./img/Coco/Logo.webp" alt="Logo">
         <a href="./index.html">Viva New Vegas</a>
         <div class="guideLinks">
             <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
             <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-            <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
-            <a href="https://gloryofcyrodiil.moddinglinked.com" target="_blank" rel="nofollow">Oblivion</a>
         </div>
     </div>
 
@@ -88,7 +86,7 @@
                     <a href="./visuals.html">Visuals</a>
                 </li>
                 <li>
-                    <a href="./finish.html">VNVE Finish</a>
+                    <a href="./finish.html">Extended Finish</a>
                 </li>
             </ul>
         </div>
@@ -96,7 +94,10 @@
             <hr>
             <ul>
                 <li>
-                    <a href="./appendix.html">Appendix</a>
+                    <a href="./changelog.html">Changelog</a>
+                </li>
+                <li>
+                    <a href="./resources.html">Resources</a>
                 </li>
                 <li>
                     <a href="./faq.html">FAQ</a>
@@ -123,40 +124,29 @@
                 <li>
                     <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
                 </li>
-                <li>
-                    <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
-                </li>
-                <li>
-                    <a href="https://gloryofcyrodiil.moddinglinked.com" target="_blank" rel="nofollow">Oblivion</a>
-                </li>
             </ul>
         </div>
 
         <!-- Footer -->
         <div id="footer">
             <ul>
-                <li>
-                    <a href="https://discord.gg/moddinglinked-659108573485465620" target="_blank">
+                <li class="discord">
+                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
                         <i class="fab fa-discord"></i>
+                        Discord
                     </a>
                 </li>
-                <li>
-                    <a href="https://www.patreon.com/WallSoGB" target="_blank">
-                        <i class="fab fa-patreon"></i>
+                <li class="paypal">
+                    <a href="https://paypal.me/Ungeziefi" target="_blank">
+                        <i class="fa fa-paypal"></i>
+                        Donate
                     </a>
                 </li>
-                <li>
-                    <a id="paypal" onclick="toggleDonationMenu()">
-                        <i class="fab fa-paypal"></i>
+                <li class="github">
+                    <a href="https://github.com/ModdingLinked/Viva-New-Vegas" target="_blank">
+                        <i class="fab fa-github"></i>
+                        GitHub
                     </a>
-                    <div id="paypalMenu" style="display: none;">
-                        <a href="https://www.paypal.com/paypalme/VishVadeva" target="_blank">
-                            VishVadeva
-                        </a>
-                        <a href="https://www.paypal.com/paypalme/wallsogb" target="_blank">
-                            Wall SoGB
-                        </a>
-                    </div>
                 </li>
             </ul>
         </div>
@@ -169,11 +159,18 @@
         <div class="section">
             <h1>Introduction</h1>
             <h3>Welcome to Viva New Vegas, a modular vanilla-plus modding guide for Fallout New Vegas!</h3>
-            <blockquote>
-                IMPORTANT: Everything in this guide is written down for a reason! It is vital to read <b>everything!</b>
-                <br>
-                You can <b>NOT</b> skip any paragraphs/instructions and expect your game to function as it should.
+            <blockquote style="display: flex; align-items: center;">
+                <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" class="cocoNerd">
+                <div>
+                    <b>IMPORTANT:</b>
+                    <br>
+                    Everything in this guide is written down for a reason! It is vital to read <b>everything!</b>
+                    <br>
+                    You can <b>NOT</b> skip any paragraphs/instructions and expect your game to function as it should.
+                </div>
             </blockquote>
+
+            <hr>
 
             <!-- Overview -->
             <p>
@@ -181,7 +178,7 @@
                     <h2 id="overview">Overview</h2>
                 </a>
             </p>
-            Viva New Vegas is a modding guide for Fallout New Vegas that will carefully walk you through how to install all the mods you will need for a perfectly stable, smooth, and most importantly, enjoyable experience.
+            Viva New Vegas is a modding guide for Fallout New Vegas that will carefully walk you through how to install all the mods you will need for a perfectly stable, smooth and enjoyable experience.
             <br>
             <br>
             The guide is highly accessible for everyone, no matter your modding experience. It is still incredibly important that you read all the instructions very carefully, even if you believe you are experienced enough to skip them. There are many small instructions that are vital for your game to function, and could be easily missed if you aren't careful. Although you don't need any modding experience to use this guide, it is expected for you to be relatively experienced with operating a computer in general.
@@ -194,16 +191,16 @@
             </p>
             <ul>
                 <li>
-                    <b>Stability:</b> The guide includes all essential stability enhancements and no placebo/dangerous mods.
+                    <b>Stability:</b> The guide includes all the latest and essential stability enhancements.
                 </li>
                 <li>
-                    <b>Performance:</b> Every tool, setting, and mod in the guide has been carefully selected and play-tested to ensure maximum possible performance.
+                    <b>Performance:</b> Every tool, setting and mod in the guide has been carefully selected and play-tested to ensure maximum possible performance.
                 </li>
                 <li>
-                    <b>Customizability:</b> The guide is split into <strong>2 sections</strong>; all the mods required for the game to work and perform better are contained in the first section. The mods that can be considered subjective and that alter or add game content are in the <b>VNV Extended</b> section.
+                    <b>Customizability:</b> The guide is split into <b>2 sections</b>; all the mods required for the game to work and perform better are contained in the first section. The mods that can be considered subjective and that alter or add game content are in the <strong>VNV Extended</strong> section, which is fully modular.
                 </li>
                 <li>
-                    <b>Better Gameplay:</b> As part of the <b>VNV Extended</b> section, the guide includes many mods that greatly improve the gameplay without drastically overhauling the core experience or straying away from the game's original intent. This section is highlighted by <a href="https://www.nexusmods.com/newvegas/mods/62153" target="_blank">Real Recoil</a> and <a href="https://www.nexusmods.com/newvegas/mods/66666" target="_blank">Just Assorted Mods</a>. There is also an <b>Overhauls</b> section that will make the game much more difficult and add some new vanilla-friendly content. This section is highlighted by <a href="https://www.nexusmods.com/newvegas/mods/61592" target="_blank">JSawyer Ultimate Edition</a> so it is not recommended for first time players.
+                    <b>Better Gameplay:</b> As part of the <b>VNV Extended</b> section, the guide includes many mods that greatly improve the gameplay without drastically overhauling the core experience or straying away from the game's original intent. There is also an <b>Overhauls</b> section that will make the game much more difficult and add some new vanilla-friendly content. This section is highlighted by <a href="https://www.nexusmods.com/newvegas/mods/83576" target="_blank">Vigor</a> so it is not recommended for first time players.
                 </li>
             </ul>
 
@@ -214,45 +211,24 @@
                 </a>
             </p>
             <ul>
-                <li>An English copy of the game with all DLCs from either <a href="https://store.steampowered.com/sub/13435/" target="_blank">Steam</a> or <a href="https://www.gog.com/game/fallout_new_vegas_ultimate_edition" target="_blank">GOG</a>.</li>
+                <li>An <b>English</b> copy of the game with <strong>all DLCs</strong> from either <a href="https://store.steampowered.com/sub/13435/" target="_blank">Steam</a>, <a href="https://www.gog.com/game/fallout_new_vegas_ultimate_edition" target="_blank">GOG</a>, or the <a href="https://store.epicgames.com/en-US/p/fallout-new-vegas" target="_blank">Epic Games Store</a>.</li>
                 <ul>
-                    <li>
-                        Only the English version of the game is supported for maximum compatibility; translations can conflict with mods and cause issues.
-                    </li>
-                    <li>
-                        The Microsoft Store and Epic Games Store versions of the game are unsupported:
-                        <ul>
-                            <li>
-                                The <b>Microsoft Store</b> version doesn't support xNVSE which is essential for most mods.
-                            </li>
-                            <li>
-                                The <b>Epic Games Store</b> version can be <a href="https://www.nexusmods.com/newvegas/mods/81281" target="_blank">patched</a> to support xNVSE, but Epic's DRM makes it impossible to use Mod Organizer.
-                                <br>
-                                If you know how, you can use Vortex instead, but this configuration is not supported by us.
-                            </li>
-                        </ul>
-                    </li>
-                    <li>The german release uses a "No Gore" version, making it also incompatible with xNVSE. If you are on Steam, you can use <a href="https://github.com/SteamRE/DepotDownloader" target="_blank">DepotDownloader</a> to download the international exe.</li>
+                    <li>Only the English version of the game is supported for maximum compatibility; translations can conflict with mods and cause issues.</li>
+                    <li>The <b>Microsoft Store</b> version is not supported.</li>
+                    <li>The german release uses a "No Gore" version, making it also incompatible with xNVSE. If you have it on Steam, you can use <a href="https://github.com/SteamRE/DepotDownloader" target="_blank">DepotDownloader</a> to download the international EXE.</li>
                 </ul>
-                <li>At least 12GB of free drive space.</li>
-                <li>Windows 8 or higher (64-bit).</li>
-                <li><a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ Runtime Libraries</a>.</li>
+                <li>At least 15GB of free drive space, game included (13GB if you delete all the downloads).</li>
+                <li>Windows 10 or higher (64-bit).</li>
                 <ul>
-                    <li>Extract the archive and run the included <strong>install_all.bat</strong> as an administrator to install all of the required libraries at once.</li>
+                    <li>
+                        Mod Organizer 2 does <b>NOT</b> support <strong>ARM64</strong> Windows. Vortex works, but is not supported by this guide.
+                    </li>
                 </ul>
                 <li>A text editor (<a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a> is recommended, but the default Windows notepad will work).</li>
-                <li>An archiving tool (<a href="https://www.7-zip.org/" target="_blank">7-Zip</a> is recommended. If you use Windows 11 then <a href="https://apps.microsoft.com/store/detail/nanazip/9N8G7TSCL18R?hl=en-us&gl=us" target="_blank">NanaZip</a> is a better option).</li>
-                <li>The latest GPU drivers (either <a href="https://www.nvidia.com/Download/index.aspx" target="_blank">NVIDIA</a>, <a href="https://www.amd.com/en/support" target="_blank">AMD</a> or <a href="https://www.intel.com/content/www/us/en/download/19344/intel-graphics-windows-dch-drivers.html" target="_blank">Intel</a>).</li>
+                <li>An archiving tool (<a href="https://apps.microsoft.com/store/detail/nanazip/9N8G7TSCL18R?hl=en-us&gl=us" target="_blank">NanaZip</a> is recommended).</li>
+                <li>The latest GPU drivers (either <a href="https://www.nvidia.com/Download/index.aspx" target="_blank">NVIDIA</a>, <a href="https://www.amd.com/en/support" target="_blank">AMD</a> or <a href="https://www.intel.com/content/www/us/en/search.html#q=&sort=relevancy&f:@tabfilter=[Downloads]&f:@stm_10385_en=[Graphics]" target="_blank">Intel</a>).</li>
                 <li>A <a href="https://users.nexusmods.com/register" target="_blank">Nexus Mods</a> account (a Premium subscription will allow uncapped speeds).</li>
             </ul>
-
-            <!-- Additional Mods -->
-            <p>
-                <a>
-                    <h3 id="additionalMods">Additional Mods</h3>
-                </a>
-            </p>
-            If you are looking to add more mods to your setup, please complete the guide first, or else we will be unable to help you on Discord should you need it. If you do plan on adding mods after you finish the guide reference <a href="./avoid-mods.html" target="_blank">this</a> list of mods that you should avoid using. I can not stress enough that it is only recommended to add your own mods if you are an experienced modder and know how to manually make conflict resolution patches and sort your load order! You can't just throw a bunch of mods on top of the guide without doing any conflict resolution or use automated tools and expect your game to function as intended!
 
             <!-- Recommended Specs -->
             <p>
@@ -260,12 +236,17 @@
                     <h2 id="recommendedSpecs">Recommended Specs</h2>
                 </a>
             </p>
-            The guide will make the game run better than vanilla. The game is much more CPU-intensive than GPU-intensive, and it actually handles modern hardware pretty well. Installing the game on an SSD will drastically improve load times and decrease stuttering. Here are the recommended specs for being able to run the guide at 60 FPS at 1080p:
+            The guide will make the game run better than vanilla. The game is much more CPU-intensive than GPU-intensive, and actually scales with modern hardware pretty well. Installing the game on an SSD will drastically improve loading times and decrease stuttering. Here are the recommended specs for being able to run the guide at 60 FPS at 1080p:
             <br>
             <ul>
                 <li><b>CPU:</b> Any dual-core processor (2.5GHz or more).</li>
-                <li><b>RAM:</b> 5GB of RAM.</li>
-                <li><b>GPU:</b> NVIDIA 600 series card or an AMD 5500 series card.</li>
+                <li><b>RAM:</b> 8GB or more.</li>
+                <li><b>GPU:</b> Matching or surpassing the performance of NVIDIA's 600 series or AMD's 5500 series.</li>
+                <blockquote>
+                    <b>WARNING FOR AMD USERS!:</b>
+                    <br>
+                    Make sure you have driver <b>24.6.1</b> or newer! Drivers 24.1.1 - 24.5.1 crash the game!
+                </blockquote>
             </ul>
 
             <!-- Support -->
@@ -274,14 +255,14 @@
                     <h2 id="support">Support</h2>
                 </a>
             </p>
-            Have any questions? We have a <a href="https://discord.gg/moddinglinked-659108573485465620" target="_blank">Discord</a> dedicated to the guide and a <a href="./faq.html" target="_blank">FAQ</a> section.
+            Have any questions? We have a <a href="https://discord.gg/S99Ary5eba" target="_blank">Discord</a> dedicated to the guide and a <a href="./faq.html" target="_blank">FAQ</a> section.
         </div>
 
         <!-- Arrows -->
         <div>
             <hr>
-            <a href="./index.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Home</span></a>
-            <a href="./setup.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/arrow.webp" alt="Forward Arrow"><span class="arrowText right">Setup</span></a>
+            <a href="./index.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/Others/Arrow.webp" alt="Back Arrow"><span class="arrowText left">Home</span></a>
+            <a href="./setup.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/Others/Arrow.webp" alt="Forward Arrow"><span class="arrowText right">Setup</span></a>
         </div>
     </div>
 

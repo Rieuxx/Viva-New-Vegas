@@ -7,12 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preload" href="./css/style.css" as="style" />
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/logoex-icon.webp">
+    <link rel="icon" href="img/Coco/LogoEx.webp">
     <link rel="canonical" href="https://vivanewvegas.moddinglinked.com">
     <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
     <title>User Interface | Viva New Vegas</title>
-    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, Oblivion, TESIV, TES4, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
+    <meta name="keywords" content="Fallout New Vegas, FNV, Fallout NV, Fallout, New Vegas, The Elder Scrolls, FO4, SSE, SkyrimSE, Skyrim Special Edition, Guide, Mod, Mods, Modding Guide, Bethesda, Stable, Performance, Fix, Help, DXVK, Fast, Easy, Tutorial, Mod Organizer, Nexus, Fallout 4, Skyrim, Tale of Two Wastelands, Wabbajack">
     <meta name="description" content="Mods that vastly improve the vanilla user interface without making any drastic stylistic changes.">
     <meta http-equiv='content-language' content='en-us'>
     <meta name="twitter:card" value="summary_large_image">
@@ -20,7 +20,7 @@
     <meta property="og:title" content="Viva New Vegas">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://vivanewvegas.moddinglinked.com">
-    <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/card.webp">
+    <meta property="og:image" content="https://vivanewvegas.moddinglinked.com/img/Others/Card.webp">
     <meta property="og:description" content="Mods that vastly improve the vanilla user interface without making any drastic stylistic changes.">
 </head>
 
@@ -31,13 +31,11 @@
         <div id="sideButton" onclick="toggleNav()">
             <i class="fa-solid fa-bars"></i>
         </div>
-        <img src="./img/logoex.webp" alt="Logo">
+        <img src="./img/Coco/LogoEx.webp" alt="Logo">
         <a href="./index.html">Viva New Vegas - Extended</a>
         <div class="guideLinks">
             <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
             <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-            <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
-            <a href="https://gloryofcyrodiil.moddinglinked.com" target="_blank" rel="nofollow">Oblivion</a>
         </div>
     </div>
 
@@ -88,7 +86,7 @@
                     <a href="./visuals.html">Visuals</a>
                 </li>
                 <li>
-                    <a href="./finish.html">VNVE Finish</a>
+                    <a href="./finish.html">Extended Finish</a>
                 </li>
             </ul>
         </div>
@@ -96,7 +94,10 @@
             <hr>
             <ul>
                 <li>
-                    <a href="./appendix.html">Appendix</a>
+                    <a href="./changelog.html">Changelog</a>
+                </li>
+                <li>
+                    <a href="./resources.html">Resources</a>
                 </li>
                 <li>
                     <a href="./faq.html">FAQ</a>
@@ -123,40 +124,29 @@
                 <li>
                     <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
                 </li>
-                <li>
-                    <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim Special Edition</a>
-                </li>
-                <li>
-                    <a href="https://gloryofcyrodiil.moddinglinked.com" target="_blank" rel="nofollow">Oblivion</a>
-                </li>
             </ul>
         </div>
 
         <!-- Footer -->
         <div id="footer">
             <ul>
-                <li>
-                    <a href="https://discord.gg/moddinglinked-659108573485465620" target="_blank">
+                <li class="discord">
+                    <a href="https://discord.gg/S99Ary5eba" target="_blank">
                         <i class="fab fa-discord"></i>
+                        Discord
                     </a>
                 </li>
-                <li>
-                    <a href="https://www.patreon.com/WallSoGB" target="_blank">
-                        <i class="fab fa-patreon"></i>
+                <li class="paypal">
+                    <a href="https://paypal.me/Ungeziefi" target="_blank">
+                        <i class="fa fa-paypal"></i>
+                        Donate
                     </a>
                 </li>
-                <li>
-                    <a id="paypal" onclick="toggleDonationMenu()">
-                        <i class="fab fa-paypal"></i>
+                <li class="github">
+                    <a href="https://github.com/ModdingLinked/Viva-New-Vegas" target="_blank">
+                        <i class="fab fa-github"></i>
+                        GitHub
                     </a>
-                    <div id="paypalMenu" style="display: none;">
-                        <a href="https://www.paypal.com/paypalme/VishVadeva" target="_blank">
-                            VishVadeva
-                        </a>
-                        <a href="https://www.paypal.com/paypalme/wallsogb" target="_blank">
-                            Wall SoGB
-                        </a>
-                    </div>
                 </li>
             </ul>
         </div>
@@ -166,9 +156,13 @@
     <div class="content">
         <div class="section">
             <h1>User Interface</h1>
-            <h2>Creating a Separator in MO2.</h2>
+            <h3>In this step, we will install various mods focused on interface visuals and its usability</h3>
+
+            <hr>
+
+            <h2>Creating a Separator in MO2</h2>
             <ol>
-                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
+                <li>Right-click the empty space in the left pane of MO2 and select <strong>Create separator</strong>.</li>
                 <li>Name the separator <strong>User Interface</strong>.</li>
             </ol>
 
@@ -180,8 +174,20 @@
             </p>
             <h2 class="install">Installation instructions:</h2>
             <ul>
-                <li><b>Main Files - The Mod Configuration Menu</b></li>
-                <li><b>Update File - MCM BugFix 2</b> (select the name that matches the file on Nexus when the installation prompt comes up)</li>
+                <li>
+                    <b>Main Files - The Mod Configuration Menu</b>
+                    <blockquote>
+                        If the installer window is improperly sized, press the <strong>Enter</strong> key to install.
+                    </blockquote>
+                </li>
+                <li>
+                    <b>Update File - MCM BugFix 2</b>
+                    <ul>
+                        <li>
+                            After installing the mod, right-click on it in the left pane of MO2 and select <strong>Ignore update</strong>.
+                        </li>
+                    </ul>
+                </li>
             </ul>
             Allows select mods to be configured via a single in-game menu.
 
@@ -193,37 +199,44 @@
             </p>
             <h2 class="install">Installation instructions:</h2>
             <ul>
-                <li>Download the mod and install manually through MO2.</li>
-                <li>You will be prompted with a FOMOD when installing in which you can tweak the settings to your personal preference</li>
-                <li><b><a href="https://www.nexusmods.com/newvegas/mods/70001" target="_blank">Clean Vanilla HUD</a></b> (click <b>Install</b> in the FOMOD)</li>
+                <li>
+                    <b>Download the mod and install manually through MO2.</b>
+                    <ul>
+                        <li>You will be prompted with a FOMOD when installing in which you can tweak the settings to your personal preference</li>
+                    </ul>
+                </li>
+                <li>
+                    <b><a href="https://www.nexusmods.com/newvegas/mods/85804" target="_blank">Vanilla UI Plus - Dialog Background Add-on</a></b>
+                    <ul>
+                        <li><b>Main Files - Vanilla UI Plus Dialog Background Addon</b></li>
+                    </ul>
+                </li>
             </ul>
             Improves the user interface without compromising the original style.
 
-            <!-- CPI -->
+            <!-- Clean Vanilla HUD -->
             <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/65046" target="_blank">
-                    <h2 id="cpi">Consistent Pip-Boy Icons</h2>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/70001?tab=files&file_id=1000118181&nmm=1" target="_blank">
+                    <h2 id="cleanHUD">Clean Vanilla HUD</h2>
                 </a>
             </p>
             <h2 class="install">Installation instructions:</h2>
             <ul>
-                <li><b>Main Files - 1. Consistent Pip-boy Icons</b></li>
-                <li><b>Main Files - 2. Consistent Addon Icons</b> (select the name that matches the file on Nexus when the installation prompt comes up then click <b>Install</b> in the FOMOD)</li>
-                <li><b><a href="https://www.nexusmods.com/newvegas/mods/70486" target="_blank">Clean Companion Wheel</a></b> 256x256</li>
+                <li>You will be prompted with a FOMOD installer:
+                    <ul>
+                        <li><strong>Deselect</strong> <b>I am not a Height Indicator User</b></li>
+                        <li>Install</li>
+                    </ul>
+                </li>
+                <li>
+                    <b><a href="https://www.nexusmods.com/newvegas/mods/70486" target="_blank">Clean Companion Wheel</a></b>
+                    <ul>
+                        <li><b>Main Files - Clean Companion Wheel 256x256 Edition</b></li>
+                    </ul>
+                </li>
             </ul>
-            Thousands of Pip-Boy icons re-made from scratch in HD along with many bug fixes.
-
-            <!-- CPI v5 -->
-            <p>
-                <a class="link" href="https://www.nexusmods.com/newvegas/mods/82074" target="_blank">
-                    <h2 id="cpi5">Consistent Pip-Boy Icons v5 - Items</h2>
-                </a>
-            </p>
-            <h2 class="install">Installation instructions:</h2>
-            <ul>
-                <li><b>Main Files - Consistent Pip-Boy Icons v5 - Items (Recommended)</b></li>
-            </ul>
-            This CPI update features ~250 new meticulously hand-drawn Item icons, ensuring a visually consistent and immersive experience.
+            <blockquote>The older version of the mod is intentional due to the inclusion of fonts.</blockquote>
+            HD remake of the vanilla interface.
 
             <!-- HD Map -->
             <p>
@@ -248,13 +261,91 @@
                 <li><b>Main Files - High Resolution Screens</b></li>
             </ul>
             Increases the render resolution of in-game screens (Pip-Boy, terminals, character creation menu) to match game's screen resolution.
+
+            <!-- Faster Menu -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/67811" target="_blank">
+                    <h2 id="fasterMenu">Faster Main Menu</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Faster Start Menu</b></li>
+            </ul>
+            Makes the game's main menu load faster.
+
+            <!-- Menu Search -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/81743" target="_blank">
+                    <h2 id="menuSearch">Menu Search</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - lStewieAl - Menu Search</b></li>
+            </ul>
+            Add Ctrl-F to search in PipBoy, Container, Barter, Recipe, Levelup Perks and Save/Load menus.
+
+            <!-- Improved Recipe Menu -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/75920" target="_blank">
+                    <h2 id="improvedRecipeMenu">JIP Improved Recipe Menu ESPless</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - JIP Improved Recipe Menu ESPless</b></li>
+            </ul>
+            Makes the crafting menu easier, more efficient and less tedious to use.
+
+            <!-- Sleep Wait Needs -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/85148" target="_blank">
+                    <h2 id="sleepWaitNeeds">Sleep Wait Hardcore Needs</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Sleep Wait Hardcore Needs</b></li>
+            </ul>
+            The Sleep and Wait menus will show the amount of H2O, FOD, and SLP to be gained or lost based on the time selected.
+
+            <!-- Consistent Descriptions -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/85957" target="_blank">
+                    <h2 id="modDescs">Consistent Weapon Mod Descriptions</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - Consistent Weapon Mod Descriptions</b></li>
+                <li>You will be prompted with a FOMOD installer:
+                    <ul>
+                        <li>Scriptrunner (ESPless)</li>
+                        <li>Install</li>
+                    </ul>
+                </li>
+            </ul>
+            Rewrites weapon mod descriptions for the sake of consistency and clarity. Fixing punctuation, missing stat info, and confusing wording.
+
+            <!-- No MM Exit -->
+            <p>
+                <a class="link" href="https://www.nexusmods.com/newvegas/mods/86136" target="_blank">
+                    <h2 id="mmExit">No Exit to Main Menu</h2>
+                </a>
+            </p>
+            <h2 class="install">Installation instructions:</h2>
+            <ul>
+                <li><b>Main Files - No Exit to Main Menu</b></li>
+            </ul>
+            Removes the Pause Menu option for exiting to the Main Menu, helping prevent issues that can arise from loading saves or starting a new game after exiting.
         </div>
 
         <!-- Arrows -->
         <div>
             <hr>
-            <a href="./basefinish.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/arrow.webp" alt="Back Arrow"><span class="arrowText left">Base Finish</span></a>
-            <a href="./gameplay.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/arrow.webp" alt="Forward Arrow"><span class="arrowText right">Gameplay</span></a>
+            <a href="./basefinish.html" id="previous" rel="prev" class="navigationArrow"><img class="left mirror" src="./img/Others/Arrow.webp" alt="Back Arrow"><span class="arrowText left">Base Finish</span></a>
+            <a href="./gameplay.html" id="next" rel="next" class="navigationArrow"><img class="right" src="./img/Others/Arrow.webp" alt="Forward Arrow"><span class="arrowText right">Gameplay</span></a>
         </div>
     </div>
 
@@ -268,16 +359,31 @@
                 <a href="#vui+">VUI+</a>
             </li>
             <li>
-                <a href="#cpi">CPI</a>
-            </li>
-            <li>
-                <a href="#cpi5">CPI v5</a>
+                <a href="#cleanHUD">Clean Vanilla HUD</a>
             </li>
             <li>
                 <a href="#hdMap">HD Local Maps</a>
             </li>
             <li>
                 <a href="#hdScreen">HD Screens</a>
+            </li>
+            <li>
+                <a href="#fasterMenu">Faster Main Menu</a>
+            </li>
+            <li>
+                <a href="#menuSearch">Menu Search</a>
+            </li>
+            <li>
+                <a href="#improvedRecipeMenu">Improved Recipe Menu</a>
+            </li>
+            <li>
+                <a href="#sleepWaitNeeds">Sleep Wait Needs</a>
+            </li>
+            <li>
+                <a href="#modDescs">Consistent Descriptions</a>
+            </li>
+            <li>
+                <a href="#mmExit">No MM Exit</a>
             </li>
         </ul>
     </div>
